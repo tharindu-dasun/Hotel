@@ -1,6 +1,6 @@
-package lk.ijse.gdse.Hotel.advisor;
+package Hotel.advisor;
 
-import lk.ijse.gdse.Hotel.util.ResponseUtil;
+import Hotel.util.ResponseUtil;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @CrossOrigin
 @RestControllerAdvice
-public class AppWideExceptionHandler {
+public class appWideExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler({Exception.class})
     public ResponseUtil exceptionHandler(Exception e){
